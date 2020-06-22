@@ -188,6 +188,54 @@ body
     height: 20px;
     z-index: 1;
 }
+/*-----------AWARD&ACADEMIC-----------*/
+.timelinebis
+{
+    list-style-type: none;
+    position: relative;
+}
+.timelinebis:before
+{
+    content: '';
+    background: #000;
+    display: inline-block;
+    position: absolute;
+    left: 19px;
+    width: 2px;
+    height: 100%;
+    z-index:1;
+}
+.timelinebis li
+{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
+    background: #f9f9f9;    
+}
+.timelinebis li h4 span
+{
+    color:#008;
+}
+.timelinebis li:before
+{
+    content: '';
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #000;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+}
+
+.timelinebis li span
+{
+    font-style: bold;
+    color: #800;
+}
 
 /*------------RESUME Suite----------------*/
 .research
@@ -206,7 +254,7 @@ body
 .researchcontainer
 {
     position: relative;
-    background: #f9f9f9;
+    background: #fff2e6;
     padding-top: 50px;
     padding-bottom: 40px;
     padding-left: 40px;
@@ -221,4 +269,33 @@ body
     margin-top: -10px;
     width: 40px;
     height: auto''
+}
+.img-startupwe
+{
+    width: 150px;
+    height: auto;
+    padding-right: 10px;
+}
+
+/*----------MY OTHER PROJECTS---------*/
+.projects h3
+{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.projects
+{
+    text-align: justify;
+}
+.projectscontainer
+{
+    position: relative;
+    background: #fff;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding: 50px;
+    margin-left: -15px;
+    margin-right: -15px;
 }
