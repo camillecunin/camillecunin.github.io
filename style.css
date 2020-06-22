@@ -71,10 +71,12 @@ body
 {
     padding-top: 100px;
     padding-bottom: 50px;
+    text-align: justify;
 }
 .profile-img
 {
-    height: 400px;
+    width: 400px;
+    height: auto;
     
 }
 .nav-bar
@@ -87,4 +89,136 @@ body
 .navbar
 {
     background-color: #000;
+}
+.navbar-brand img
+{
+    width: 50px;
+    height: auto;
+}
+.navbar-brand
+{
+    color: #fff;
+}
+.nav-bar .fa-bars
+{
+    font-size: auto;
+    color: #fff;
+}
+.navbar-toggler
+{
+    outline: none !important;
+}
+.navbar-nav
+{
+    float: right;
+    text-align: right;
+}
+.nav-link
+{
+    color: #fff !important;
+}
+.skills-bar p
+{
+    margin-bottom: 6px;
+    font-weight: auto;
+}
+.progress
+{
+    border-radius: 16px !important;
+    margin-bottom: 10px;
+}
+.progress-bar
+{
+    border-radius: 16px;
+    background: #000 !important;
+}
+
+/*------------RESUME----------------*/
+.resume
+{
+    text-align: justify;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background: #f9f9f9;
+}
+.resume h3
+{
+    text-align: center;
+    margin-bottom: 50px;
+   
+}
+.timeline
+{
+    list-style-type: none;
+    position: relative;
+}
+.timeline:before
+{
+    content: '';
+    background: #000;
+    display: inline-block;
+    position: absolute;
+    left: 19px;
+    width: 2px;
+    height: 100%;
+    z-index:1;
+}
+.timeline li
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
+    background: #f9f9f9;    
+}
+.timeline li h4 span
+{
+    color:#008;
+}
+.timeline li:before
+{
+    content: '';
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #000;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+}
+
+/*------------RESUME Suite----------------*/
+.research
+{
+    text-align: justify;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background: #fff;
+}
+.research h3
+{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.researchcontainer
+{
+    position: relative;
+    background: #f9f9f9;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding: 50px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.pig-img
+{
+    margin-right: 10px;
+    margin-top: -10px;
+    width: 40px;
+    height: auto''
 }
