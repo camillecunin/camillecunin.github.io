@@ -8,7 +8,28 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    
+ <!---JS-ReadMore-ReadLess----->   
+<script>
+  function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+    </script>
 </head>
 <body>
 
@@ -16,7 +37,7 @@
 <section id="header">
 <div class="container text-center">
 <div class="user-box">
-<img src="img/cc6.jpg">
+<img src="img/ccpro.jpg">
 <h1>Camille CUNIN</h1>
 <p>Graduate Student in General Engineering</p>
 </div>    
@@ -112,10 +133,10 @@
 <div class="container">
 <div class="row">
 <div class="col-md-6">
-<h3><i class="fa fa-briefcase"></i> My Experiences </h3>
+<h3> My Experiences <i class="fa fa-briefcase"></i></h3>
 <ul class="timeline">
 <li>
-<h5>November 2019 – March 2020</h5>
+<h5>November 2019 – March 2020 <span class="iconify" data-icon="mdi-microscope" data-inline="false"></span></h5>
     <h4 style="color:#008;">RESEARCH STUDENT, Harvard Med School</h4>
     <b><i>The Albers Lab – MassGeneral Institute for Neurodegenerative Disease (MIND) - MGH – BOSTON</i></b><br>
 <p>
@@ -124,7 +145,7 @@
 </li>
 
 <li>
-<h5>February 2019 – March 2020</h5>
+<h5>February 2019 – March 2020 <span class="iconify" data-icon="mdi-microscope" data-inline="false"></span></h5>
 <h4 style="color:#008;">RESEARCH STUDENT, Harvard University</h4>
     <b><i>The Tearney Lab – Wellman Center for Photomedicine - MGH – BOSTON</i></b><br>
 <p>
@@ -134,7 +155,7 @@
 
     
 <li>
-<h5>June 2019 – August 2019</h5>
+<h5>June 2019 – August 2019 <i class="fa fa-book"></i></h5>
 <h4 style="color:#008;">RESEARCH STUDENT, Harvard University</h4>
     <b><i>The Tearney Lab – Wellman Center for Photomedicine - MGH – BOSTON</i></b><br>
 <p>In parallel with my internship, I completed a three-month program in biomedical optics at MGH. Through hands-on research experience, this program trains participants in the study and innovation of biomedical optics for improving human health and advancing biological sciences. Students are challenged to explore ways to conduct research responsibly and to achieve the skills to communicate research findings effectively through oral presentations, scientific poster presentation and a large panel of courses on diverse medical or engineering topics.<br>
@@ -142,7 +163,7 @@
 </li>
 
 <li>
-<h5>August 2018</h5>
+<h5>August 2018 <span class="iconify" data-icon="mdi-microscope" data-inline="false"></span></h5>
 <h4 style="color:#008;">INTERN, École Centrale de Marseille</h4>
 <b><i>Grands Moulins Storione – MARSEILLE</i></b><br>
 <p>As a first working experience in a laboratory, I discovered how to control wheat’s quality by carrying out tests on wheat greats and flour such as measures of humidity and ash contend.<br>
@@ -154,7 +175,7 @@
     
     
 <div class="col-md-6">
-<h3><i class="fa fa-graduation-cap"></i> My Education</h3>
+<h3></i> My Education <i class="fa fa-graduation-cap"></i></h3>
 <ul class="timeline">
 <li>
 <h5>September 2020 – September 2021</h5>
@@ -223,7 +244,7 @@
 <ul class="timeline2">
 <li>
 <h5>2020</h5>
-    <h4 style="color:#00b8e6;">SELECTIVE LOSS OF EPISODIC MEMORY OF ODOR PERCEPTS PREDICTS PROGRESSION TO AMNESTIC MCI OR ALZHEIMER’S DISEASE </h4>
+    <h4 style="color:#00b8e6;">SELECTIVE LOSS OF EPISODIC MEMORY OF ODOR PERCEPTS PREDICTS PROGRESSION TO AMNESTIC MCI OR ALZHEIMER’S DISEASE <i class="fa fa-search"></i></h4>
     <b>The Albers Lab (MIND) - Boston</b><br>
 <p>
     After statistically analyzing odor memory scores collected in a longitudinal cohort, I took part, as third author, in the writing of a short report disclosing the potential of a selective deficit on episodic odor memory for predicting cognitive decline among cognitively normal elderly individuals. Before the COVID-19 pandemic changed my plans, I was working on a second manuscript, a global review on existing olfactory-based approaches used to detect early stages of Alzheimer’s disease in pre-clinical but asymptomatic individuals.<br>
@@ -231,7 +252,7 @@
 </li>
 <li>
     <h5>2019-2020</h5>
-    <h4 style="color:#00b8e6;"><img src="img/pig.png" class="pig-img">OCT-TCE DEVICE FOR DETAILED VISUALIZATION OF THE TERMINAL ILEUM</h4>
+    <h4 style="color:#00b8e6;"><img src="img/pig.png" class="pig-img">OCT-TCE DEVICE FOR DETAILED VISUALIZATION OF THE TERMINAL ILEUM <i class="fa fa-cogs"></i></h4>
     <b>The Tearney Lab (Wellman Center for Photmedicine, MGH) - Boston</b><br>
 <p>
     I worked on a challenging project to design a novel, minimal invasive, and high-resolution OCT-imaging device to diagnose Crohn’s disease. This 1-year internship has provided me with a strong experience in biomedical research as I have learnt how to conduct research protocols and animal studies, how to validate my experiments and how to present my work through weekly meetings, scientific poster presentations, slam talks or mid-term advancement calls.<br>
@@ -286,21 +307,21 @@
     <h4 style="color:#085;"><i class="material-icons">alarm</i> 36H CHRONO</h4>
     <b>École Centrale de Marseille</b><br>
 <p>
-    Through this thirty-six-hour entrepreneurship challenge, I first learned how to brainstorm ideas, to manage a team and to build a business plan. Our project consisted in launching a company providing services to improve employees’ wellbeing through diverse activities tailored to their needs and availabilities. Through this project, I have learnt how to acquire a large amount of knowledge in a couple of hours and to apply them to launch a project while meeting deadlines.<br>
+    Through this thirty-six-hour entrepreneurship challenge, I first learned how to brainstorm ideas, <span id="dots">...</span><span id="more"> to manage a team and to build a business plan. Our project consisted in launching a company providing services to improve employees’ wellbeing through diverse activities tailored to their needs and availabilities. Through this project, I have learnt how to acquire a large amount of knowledge in a couple of hours and to apply them to launch a project while meeting deadlines.</span><br>
 </p>
+<button onclick="myFunction()" id="myBtn">Read more</button>
 </li>
-    
-<li>
-    <h5>2015-2016</h5>
-    <h4 style="color:#085;"><i class="material-icons">cloud</i> DAMPING OF LIQUID SLOSHING BY FOAMS </h4>
-    <b>Lycée Louis-le-Grand</b><br>
-    <p>In my undergraduate preparatory classes, I studied the damping effect of liquid sloshing by foams. More specifically, I worked on the damping effect of a beer foam on top of the liquid. I built a model to describe the foam contribution to the damping coefficient through vicious dissipation on the wall of the container.<br>
-    </p>
-</li>    
 </ul>
 
 </div>
-</div>    
+</div>  
+</div>
+    
+<!-----------------Associations & Volunteering------------>
+    
+
+    
+    
 <!-----------------Contact------------>
 
 </section>
