@@ -9,7 +9,7 @@ body
 #header
 {
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(img/books.png);
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(img/bg3.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -135,7 +135,7 @@ body
     background: #000 !important;
 }
 
-/*------------RESUME----------------*/
+/*------------EDUCATION AND EXPERIENCES----------------*/
 .resume
 {
     text-align: justify;
@@ -227,6 +227,7 @@ body
     position: absolute;
     border-radius: 50%;
     border: 3px solid #000;
+    margin-top: 10px;
     left: 10px;
     width: 20px;
     height: 20px;
@@ -237,14 +238,15 @@ body
 {
     font-style: bold;
     color: #800;
+    font-size: 20px;
 }
 
-/*------------RESUME Suite----------------*/
+/*------------MY RESEARCH PROJECTS----------------*/
 .research
 {
     text-align: justify;
     padding-top: 50px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     background: #f9f9f9;
 }
 .research h3
@@ -257,12 +259,11 @@ body
 {
     position: relative;
     background: #fff2e6;
-    padding-top: 50px;
-    padding-bottom: 40px;
-    padding-left: 40px;
-    padding-right: 50px;
+    padding: 50px;
+    padding-right: 80px;
     margin-left: -45px;
     margin-right: -45px;
+    margin-bottom: -45px;
 }
 
 .pig-img
@@ -272,19 +273,12 @@ body
     width: 40px;
     height: auto''
 }
-.img-startupwe
-{
-    width: 150px;
-    height: auto;
-    padding-right: 10px;
-}
-
 /*----------MY OTHER PROJECTS---------*/
 .projects h3
 {
     text-align: center;
     padding-top: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 .projects
 {
@@ -294,18 +288,24 @@ body
 {
     position: relative;
     background: #fff;
-    padding-top: 50px;
-    padding-bottom: 40px;
-    padding-left: 40px;
     padding: 50px;
     margin-left: -15px;
     margin-right: -15px;
+    margin-top: 30px;
+}
+.img-startupwe
+{
+    width: 180px;
+    height: auto;
+    padding-left: 10px;
 }
 
-/*--------------ESSAI-----------*/
+/*--------------READMORE/READLESS-BUTTONS-----------*/
 
-#more {display: none;}
-#myBtn
+#more1 {display: none;}
+#more2 {display: none;}
+#more3 {display: none;}
+#myBtn1
 {
   background-color: white;
   color: #4CAF50;
@@ -316,6 +316,282 @@ body
   display: inline-block;
   font-size: 15px;
     width: 100px;
-    height: auto;
+    height: 30px;   
+}
+#myBtn2
+{
+  background-color: white;
+  color: #4CAF50;
+  border: none; 
+  padding: 2px 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+    width: 100px;
+    height: 30px;   
+}
+#myBtn3
+{
+  background-color: white;
+  color: #4CAF50;
+  border: none; 
+  padding: 2px 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+    width: 100px;
+    height: 30px;   
+}
+
+/*----------------ASSOCIATIONS AND VOLUNTEERING----------------------*/
+.asso
+{
+    text-align: justify;
+    padding: 50px;
+    background: #f9f9f9;
+}
+.asso h3
+{
+    text-align: center;
+    color: #f5deb3;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.assocontainer
+{
+    position: relative;
+    background: #008080;
+    padding: 50px;
+    margin-left: -30px;
+    margin-right: -30px;
+    margin-bottom: -80px;
+}
+.cheerup-img
+{
+    border-radius: 10%;
+    width: auto;
+    height: 150px;
+    border: 3px solid #6caed5;
+}
+.cg-img
+{
+    border-radius: 10%;
+    height: 150px;
+    width: auto;
+    border: 3px solid #6caed5;
+}
+.decon-img
+{
+    border-radius: 10%;
+    height: 150px;
+    width: auto;
+    border: 3px solid #6caed5;
+}
+.ksi-img
+{
+    border-radius: 10%;
+    width: auto;
+    height: 150;
+    border: 3px solid #6caed5;
+}
+.bwh-img
+{
+    border-radius: 10%;
+    width: auto;
+    height: 150px;
+    border: 3px solid #6caed5;
+}
+.assocontainer
+{
+    text-align: center;
+}
+
+.dropdowndecon {
+  position: relative;
+  display: inline-block;
+}
+.dropdowndecon img {
+  border-radius: 10%;
+  border: 3px solid #6caed5;
+}
+
+.dropdowndecon-content {
+  display: none;
+  position: absolute;
+  background-color: #f5deb3;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10%;
+}
+
+.dropdowndecon:hover .dropdowndecon-content {
+  display: block;
+}
+
+.descdecon {
+  padding: 15px;
+  text-align: justify;
+}
+
+.dropdownbwh {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownbwh img {
+  border-radius: 10%;
+  border: 3px solid #6caed5;
+}
+
+.dropdownbwh-content {
+  display: none;
+  position: absolute;
+  background-color: lightsteelblue;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10%;
+}
+.dropdownbwh:hover .dropdownbwh-content {
+  display: block;
+}
+.descbwh {
+  padding: 15px;
+  text-align: justify;
+}
+
+.dropdowncu {
+  position: relative;
+  display: inline-block;
     
+}
+.dropdowncu img {
+  border-radius: 10%;
+  border: 3px solid #6caed5;
+}
+
+.dropdowncu-content {
+  display: none;
+  position: absolute;
+  background-color: indianred;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10%;
+}
+
+.dropdowncu:hover .dropdowncu-content {
+  display: block;
+}
+
+.desccu {
+  padding: 15px;
+  text-align: justify;
+}
+
+.dropdownksi {
+  position: relative;
+  display: inline-block;
+    
+}
+.dropdownksi img {
+  border-radius: 10%;
+  border: 3px solid #6caed5;
+}
+
+.dropdownksi-content {
+  display: none;
+  position: absolute;
+  background-color: #6caed5;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10%;
+}
+
+.dropdownksi:hover .dropdownksi-content {
+  display: block;
+}
+
+.descksi {
+  padding: 15px;
+  text-align: justify;
+}
+
+.dropdowncg {
+  position: relative;
+  display: inline-block;
+    
+}
+.dropdowncg img {
+  border-radius: 10%;
+  border: 3px solid #6caed5;
+}
+
+.dropdowncg-content {
+  display: none;
+  position: absolute;
+  background-color: #ff9933;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10%;
+}
+
+.dropdowncg:hover .dropdowncg-content {
+  display: block;
+}
+
+.desccg {
+  padding: 15px;
+  text-align: justify;
+}
+
+/*---------------PASSIONS-------*/
+.passion
+{
+    text-align: justify;
+    padding: 50px;
+    }
+.passion h3
+{
+    text-align: center;
+    color: #fe4f45;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.passioncontainer
+{
+    position: relative;
+    /*background: url(img/bg3.jpg);*/
+    padding: 50px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 500px;
+}
+
+/*---------------CONTACTS-------*/
+.contact
+{
+    text-align: justify;
+    padding: 50px;
+    }
+.contact h3
+{
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.contactcontainer
+{
+    position: auto;
+    background: #000;
+    padding: 50px;
+    margin-left: -15px;
+    margin-right: -15px;
+
 }

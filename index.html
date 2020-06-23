@@ -11,25 +11,59 @@
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
     
- <!---JS-ReadMore-ReadLess----->   
+ <!------JS-ReadMore/ReadLess buttons----->   
 <script>
-  function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
+  function myreadBF1()
+{
+  var dots1 = document.getElementById("dots1");
+  var more1Text = document.getElementById("more1");
+  var btn1Text = document.getElementById("myBtn1");
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
+  if (dots1.style.display === "none") {
+    dots1.style.display = "inline";
+    btn1Text.innerHTML = "Read more";
+    more1Text.style.display = "none";
+  }
+  else {
+    dots1.style.display = "none";
+    btn1Text.innerHTML = "Read less";
+    more1Text.style.display = "inline";
   }
 }
-    </script>
+  function myreadBF2() {
+  var dots2 = document.getElementById("dots2");
+  var more2Text = document.getElementById("more2");
+  var btn2Text = document.getElementById("myBtn2");
+
+  if (dots2.style.display === "none") {
+    dots2.style.display = "inline";
+    btn2Text.innerHTML = "Read more";
+    more2Text.style.display = "none";
+  } else {
+    dots2.style.display = "none";
+    btn2Text.innerHTML = "Read less";
+    more2Text.style.display = "inline";
+  }
+}
+  function myreadBF3() {
+  var dots3 = document.getElementById("dots3");
+  var more3Text = document.getElementById("more3");
+  var btn3Text = document.getElementById("myBtn3");
+
+  if (dots3.style.display === "none") {
+    dots3.style.display = "inline";
+    btn3Text.innerHTML = "Read more";
+    more3Text.style.display = "none";
+  } else {
+    dots3.style.display = "none";
+    btn3Text.innerHTML = "Read less";
+    more3Text.style.display = "inline";
+  }
+  }
+</script>
+<!--------------------------------------------------------->
 </head>
 <body>
 
@@ -102,24 +136,24 @@
 </p>
     
 <div class="skills-bar">
-<p>Adobe Lightroom</p>
+<p>Html/CSS</p>
 <div class="progress">
-<div class="progress-bar" style="witdh: 80%;">80%</div>
+<div class="progress-bar" style="width: 30%;">30%</div>
 </div>
     
-<p>Open Office</p>
+<p>Pack Office</p>
 <div class="progress">
-<div class="progress-bar" style="witdh: 70%;">70%</div>
+<div class="progress-bar" style="width: 70%;">70%</div>
 </div>
     
-<p>Open Office</p>
+<p>Adobe Lightroon</p>
 <div class="progress">
-<div class="progress-bar" style="witdh: 50%;">50%</div>
+<div class="progress-bar" style="width: 80%;">80%</div>
 </div>
     
-<p>Open Office</p>
+<p>Wordpress</p>
 <div class="progress">
-<div class="progress-bar" style="witdh: 70%;">70%</div>
+<div class="progress-bar" style="width: 70%;">70%</div>
 </div>
 </div>
 </div>    
@@ -133,7 +167,7 @@
 <div class="container">
 <div class="row">
 <div class="col-md-6">
-<h3> My Experiences <i class="fa fa-briefcase"></i></h3>
+<h3> My Experiences <i class="fas fa-briefcase"></i></h3>
 <ul class="timeline">
 <li>
 <h5>November 2019 – March 2020 <span class="iconify" data-icon="mdi-microscope" data-inline="false"></span></h5>
@@ -155,7 +189,7 @@
 
     
 <li>
-<h5>June 2019 – August 2019 <i class="fa fa-book"></i></h5>
+<h5>June 2019 – August 2019 <i class="fas fa-chalkboard-teacher"></i></h5>
 <h4 style="color:#008;">RESEARCH STUDENT, Harvard University</h4>
     <b><i>The Tearney Lab – Wellman Center for Photomedicine - MGH – BOSTON</i></b><br>
 <p>In parallel with my internship, I completed a three-month program in biomedical optics at MGH. Through hands-on research experience, this program trains participants in the study and innovation of biomedical optics for improving human health and advancing biological sciences. Students are challenged to explore ways to conduct research responsibly and to achieve the skills to communicate research findings effectively through oral presentations, scientific poster presentation and a large panel of courses on diverse medical or engineering topics.<br>
@@ -163,7 +197,7 @@
 </li>
 
 <li>
-<h5>August 2018 <span class="iconify" data-icon="mdi-microscope" data-inline="false"></span></h5>
+<h5>August 2018 <i class='fas fa-microscope'></i></h5>
 <h4 style="color:#008;">INTERN, École Centrale de Marseille</h4>
 <b><i>Grands Moulins Storione – MARSEILLE</i></b><br>
 <p>As a first working experience in a laboratory, I discovered how to control wheat’s quality by carrying out tests on wheat greats and flour such as measures of humidity and ash contend.<br>
@@ -175,7 +209,7 @@
     
     
 <div class="col-md-6">
-<h3></i> My Education <i class="fa fa-graduation-cap"></i></h3>
+<h3>My Education <i class="fa fa-graduation-cap"></i></h3>
 <ul class="timeline">
 <li>
 <h5>September 2020 – September 2021</h5>
@@ -212,7 +246,7 @@
 </ul> 
 <br>
 
-<h3>Awards & Academic<br><span class="material-icons"> military_tech</span>  Achievements <span class="material-icons">emoji_events </span></h3>
+<h3><i class='fas fa-award' style='font-size: auto'></i>   Awards & Academic <i class='fas fa-user-graduate'></i><br>Achievements </h3>
 <ul class="timelinebis">
 <li>
 <p><span><b>2021</b></span> - Graduation year (MS degree)</p>
@@ -240,11 +274,11 @@
     
 <div class="research container" id="research">
 <div class="researchcontainer">
-<h3><i class="fa fa-flask"></i> ------- My Research Projects ------- <i class="fa fa-flask"></i></h3>
+<h3><i class="fas fa-laptop-medical"></i> ------- My Research Projects ------- <i class="fas fa-cogs"></i></h3>
 <ul class="timeline2">
 <li>
 <h5>2020</h5>
-    <h4 style="color:#00b8e6;">SELECTIVE LOSS OF EPISODIC MEMORY OF ODOR PERCEPTS PREDICTS PROGRESSION TO AMNESTIC MCI OR ALZHEIMER’S DISEASE <i class="fa fa-search"></i></h4>
+    <h4 style="color:#00b8e6;">SELECTIVE LOSS OF EPISODIC MEMORY OF ODOR PERCEPTS PREDICTS PROGRESSION TO AMNESTIC MCI OR ALZHEIMER’S DISEASE <i class='fas fa-brain'></i></h4>
     <b>The Albers Lab (MIND) - Boston</b><br>
 <p>
     After statistically analyzing odor memory scores collected in a longitudinal cohort, I took part, as third author, in the writing of a short report disclosing the potential of a selective deficit on episodic odor memory for predicting cognitive decline among cognitively normal elderly individuals. Before the COVID-19 pandemic changed my plans, I was working on a second manuscript, a global review on existing olfactory-based approaches used to detect early stages of Alzheimer’s disease in pre-clinical but asymptomatic individuals.<br>
@@ -252,7 +286,7 @@
 </li>
 <li>
     <h5>2019-2020</h5>
-    <h4 style="color:#00b8e6;"><img src="img/pig.png" class="pig-img">OCT-TCE DEVICE FOR DETAILED VISUALIZATION OF THE TERMINAL ILEUM <i class="fa fa-cogs"></i></h4>
+    <h4 style="color:#00b8e6;"><img src="img/pig.png" class="pig-img">OCT-TCE DEVICE FOR DETAILED VISUALIZATION OF THE TERMINAL ILEUM <i class='fas fa-lungs-virus'></i></h4>
     <b>The Tearney Lab (Wellman Center for Photmedicine, MGH) - Boston</b><br>
 <p>
     I worked on a challenging project to design a novel, minimal invasive, and high-resolution OCT-imaging device to diagnose Crohn’s disease. This 1-year internship has provided me with a strong experience in biomedical research as I have learnt how to conduct research protocols and animal studies, how to validate my experiments and how to present my work through weekly meetings, scientific poster presentations, slam talks or mid-term advancement calls.<br>
@@ -285,46 +319,133 @@
 <div class="projects container" id="projects">
 <div class="projectscontainer">
 <h3><i class="fa fa-rocket"></i> ------- Other Projects ------- <i class="fa fa-rocket"></i></h3>
-<ul class="timeline3">
-<li>
-<h5>2020 (April 24-26)</h5>
-    <h4 style="color:#085;"><img src="img/startupwe.png" class="img-startupwe"> GLOBAL STARTUP WEEKEND COVID-19 </h4>
-    <b>Taiwan</b><br>
-<p>
-    During this Global Online Startup Weekend, 70 countries around the world called for developers, designers, marketers, nurses, doctors, students, scientists, business owners, teachers and anyone with an idea to tackle the challenges created by the global COVID-19 pandemic. From Taiwan, I enrolled my friends from San Francisco, London and Paris to work on a common project aiming at finding solutions to tackle education-related issues during lockdown in France. The video I made to present our project can be found here: https://www.powtoon.com/online-presentation/cnrflS6ufzK/?mode=movie.e-clinical but asymptomatic individuals.<br>
-</p>
-</li>
-<li>
-    <h5>2019-2020</h5>
-    <h4 style="color:#085;"><i class="material-icons">computer</i> DEEP LEARNING PROJECT</h4>
-    <b>École Centrale de Marseille</b><br>
-    <p>The purpose of this AI project was to build an autonomous robot run by an AI algorithm and capable to drive itself on an unknown track and to avoid obstacles. As a project manager, I lead my team to build this robot with Arduino technology and deep learning coding.<br>
-</p>
-</li>
-  
-<li>
-    <h5>2018</h5>
-    <h4 style="color:#085;"><i class="material-icons">alarm</i> 36H CHRONO</h4>
-    <b>École Centrale de Marseille</b><br>
-<p>
-    Through this thirty-six-hour <span id="dots">...</span><span id="more"> entrepreneurship challenge, I first learned how to brainstorm ideas, to manage a team and to build a business plan. Our project consisted in launching a company providing services to improve employees’ wellbeing through diverse activities tailored to their needs and availabilities. Through this project, I have learnt how to acquire a large amount of knowledge in a couple of hours and to apply them to launch a project while meeting deadlines.</span><br>
 
-<button onmousemove="myFunction()" id="myBtn">Read more</button>
+    <h4 style="color:#085;"> <i class="fas fa-flask"></i> GLOBAL STARTUP WEEKEND COVID-19 <img src="img/startupwe.png" class="img-startupwe"></h4>
+    <h5>2020 (April 24-26) - <b>Taiwan</b><br> </h5><span id="dots1">...</span><button onclick="myreadBF1()" id="myBtn1">Read more</button><span id="more1">
+   <p> During this Global Online Startup Weekend, 70 countries around the world called for developers, designers, marketers, nurses, doctors, students, scientists, business owners, teachers and anyone with an idea to tackle the challenges created by the global COVID-19 pandemic. From Taiwan, I enrolled my friends from San Francisco, London and Paris to work on a common project aiming at finding solutions to tackle education-related issues during lockdown in France. The video I made to present our project can be found here: https://www.powtoon.com/online-presentation/cnrflS6ufzK/?mode=movie.e-clinical but asymptomatic individuals.<br>
+    
 </p>
-</li>
-</ul>
+</span>
+<p></p>
 
+<h4 style="color:#085;"><i class="material-icons">computer</i> DEEP LEARNING PROJECT</h4>
+    <h5>2019-2020 - <b>École Centrale de Marseille</b><br></h5>
+    <span id="dots2">...</span><button onclick="myreadBF2()" id="myBtn2">Read more</button><span id="more2">
+<p>The purpose of this AI project  was to build an autonomous robot run by an AI algorithm and capable to drive itself on an unknown track and to avoid obstacles. As a project manager, I lead my team to build this robot with Arduino technology and deep learning coding.<br>
+</p></span>
+<p></p>
+
+    
+<h4 style="color:#085;"><i class="material-icons">alarm</i> 36H CHRONO</h4>
+
+    <h5>2018 - <b>École Centrale de Marseille</b><br></h5>
+<span id="dots3">...</span><button onclick="myreadBF3()" id="myBtn3">Read more</button><span id="more3">
+<p>
+    Through this thirty-six-hour entrepreneurship challenge, I first learned how to brainstorm ideas, to manage a team and to build a business plan. Our project consisted in launching a company providing services to improve employees’ wellbeing through diverse activities tailored to their needs and availabilities. Through this project, I have learnt how to acquire a large amount of knowledge in a couple of hours and to apply them to launch a project while meeting deadlines.<br>
+</p></span>
+    <p></p><p></p>
 </div>
 </div>  
 </div>
     
 <!-----------------Associations & Volunteering------------>
+
+<div class="asso container" id="asso">
+<div class="assocontainer">
+<h3><i class="fas fa-hands"></i> ------- Associations & Volunteering------- <i class="fa fa-hand-holding-medical"></i></h3>
+
+
+<!---DECON----->
+<div class="dropdowndecon">
+  <img src="img/decon.png" alt="N95 Decon" border-radius= "10%" height= "150px" width= "auto" border= "3px solid #6caed5">
+<div class="dropdowndecon-content">
+  <img src="img/decon.png" alt="N95 Decon" width="auto" height="300">
+  <div class="descdecon ">FRENCH TRANSALATOR - 2020 <p>N95DECON, INC., a California public benefit corporation, has been formed to support the work of a collection of volunteer scientists, engineers, clinicians, and students from universities across the United States as well as other professionals in the private sector to help disseminate scientific information about personal protective equipment decontamination,  including N95 respirators during COVID-19 pandemic (https://www.n95decon.org/).</p></div>
+  </div>
+</div>
+
+    <!---BWH----->
+<div class="dropdownbwh">
+  <img src="img/bwh.png" alt="BWH" border-radius= "10%" height= "150px" width= "auto" border= "3px solid #6caed5">
+<div class="dropdownbwh-content">
+  <img src="img/bwh.png" alt="BWH" width="auto" height="300">
+  <div class="descbwh">RESEARCH VOLUNTEER - 2019 – VISUAL ATTENTION LAB - HARVARD MEDICAL SCHOOL-BRIGHAM & WOMEN'S HOSPITAL – <p>For a few months, I took part in weekly studies to help understand the mechanisms by which attention selects specific items. This included studies of how to terminate searches without finding the target and studies of the processing of visual stimuli before they are selected by attention for further, more complete analysis.</p></div>
+  </div>
+    </div>
+    
+ <!---Cheer Up!----->
+<div class="dropdowncu">
+  <img src="img/cheerup.png" alt="Cheer Up!" height= "150px" width= "auto">
+<div class="dropdowncu-content">
+  <img src="img/cheerup.png" alt="Cheer Up!" width="auto" height="300">
+  <div class="desccu">VOLONTEER - 2017–2018 – CHEER UP! <p>I used to periodically visit children suffering from cancer at the hospital to talk about their projects and help them fulfill their dreams. As a first experience with the clinical world, I experienced the in-hospital world and realized how important innovation is in the biomedical field.</p></div>
+  </div>
+    </div>
+    
+    
+ <!---KSI----->
+<div class="dropdownksi">
+  <img src="img/ksi.png" alt="KSI Centrale Marseille" height= "150px" width= "auto">
+<div class="dropdownksi-content">
+  <img src="img/ksi.png" alt="KSI Centrale Marseille" width="auto" height="300">
+  <div class="descksi">JUNIOR ENTREPRENEUR - 2017–2018 – PROJECT MANAGER & WEB SPECIALIST AT KSI CENTRALE MARSEILLE <p> As a project manager, my role was to identify clients’ needs, to write specifications, to draw up provisional budget and planning, as well as to draft commercial proposals. My experience as a Junior Entrepreneur strengthened my ability to organize information, to identify priorities and to work efficiency to meet deadlines. As a quality controller, I took part in the quality process by reviewing and validating every study related to web development. It helped me develop my attention to detail and my ability to determine what is relevant information and what is not.</p></div>
+  </div>
+    </div>
+    
+    
+ <!---Centrale Glisse----->
+<div class="dropdowncg">
+  <img src="img/cg.png" alt="Centrale Glisse" height= "150px" width= "auto">
+<div class="dropdowncg-content">
+  <img src="img/cg.png" alt="Centrale Glisse" width="auto" height="300">
+  <div class="desccg">PRESIDENT - 2017–2018 – CENTRALE GLISSE <p> I relaunched this association to offer ECM students the possibility to practice various surfing sports by providing lessons and facilities at a discount price. Through this project, I not only developed management skills, but also learned canvassing to find kitesurfs teachers and other sponsors.</p></div>
+  </div>
+    </div>
+<p></p>
+<p></p> 
+<p></p>
+<p></p>    
+       
+<p></p>
+<p></p> 
+<p></p>
+<p></p>    
+       
+    
+    
+</div>
+</div>
+</div>    
+    
+<!-----------------PASSIONS------------>
+
+<div class="passion container" id="passion">
+<div class="passioncontainer">
+<h3><i class="fas fa-heart"></i> ------- PASSIONS------- <i class="fas fa-icons"></i></h3>
+   
+ <p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>   
+   
+        
+<!-----------------CONTACT------------>
+    
+<div class="contact container" id="contact">
+<div class="contactcontainer">
+<h3><i class="fas fa-envelope"></i> ------- CONTACT------- <i class="fas fa-pen"></i></h3>
+   
     
 
-    
-    
-<!-----------------Contact------------>
 
+    
+</div>    
+</div>    
+    
 </section>
     
         
