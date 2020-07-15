@@ -593,5 +593,13 @@ body
     padding: 50px;
     margin-left: -15px;
     margin-right: -15px;
-
+    color: darkgrey;
+    font-family: sans-serif;
 }
+
+.contact img
+{
+    border-radius: 10%;
+    border: 3px solid darkgrey;   
+}
+
