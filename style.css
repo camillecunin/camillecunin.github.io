@@ -359,6 +359,14 @@ body
     margin-top: 20px;
     margin-bottom: 50px;
 }
+
+.asso h4
+{
+    text-align: justify;
+    color: #f5deb3;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
 .assocontainer
 {
     position: relative;
