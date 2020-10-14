@@ -41,6 +41,12 @@ body
     font-size: 20px;
     margin: 8px;
 }
+.user-box legendebg
+{
+    color: #f1f1f1;
+    position: right;
+    font-size: 50px;
+}
 .scroll-btn
 {
     bottom: 30px;
@@ -75,13 +81,39 @@ body
     padding-bottom: 50px;
     text-align: justify;
 }
-.profile-img
+.profile-img1
 {
-    width: 82%;
+    width: 48%;
     height: auto;
-    align-self: left;
+    border-radius: 20px;
+    border: 2px solid white;
+    margin-top: 20px;
+}
+.profile-img2
+{
+    width: 50.5%;
+    height: auto;
+    border-radius: 20px;
+    border: 2px solid white;
+    margin-top: 20px;
+}
+
+.hstsi
+{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    border: 10px solid white;
+}
+.hstsi-picture
+{
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    padding: 10px;
     
 }
+
 .nav-bar
 {
     top: 0;
@@ -437,14 +469,14 @@ body
   display: none;
   position: absolute;
   background-color: #f5deb3;
-  min-width: 160px;
+  width: 300%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  border-radius: 10%;
+  border-radius: 5%;
 }
 
 .dropdowndecon:hover .dropdowndecon-content {
-  display: block;
+  display: inline-block;
 }
 
 .descdecon {
@@ -452,6 +484,7 @@ body
   text-align: justify;
 }
 
+/*--------BWH-----*/
 .dropdownbwh {
   position: relative;
   display: inline-block;
@@ -466,13 +499,13 @@ body
   display: none;
   position: absolute;
   background-color: #6caed5;
-  min-width: 160px;
+  width: 300%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  border-radius: 10%;
+  border-radius: 5%;
 }
 .dropdownbwh:hover .dropdownbwh-content {
-  display: block;
+  display: inline-block;
 }
 .descbwh {
   padding: 15px;
@@ -496,14 +529,14 @@ body
   display: none;
   position: absolute;
   background-color: #ff9933;
-  min-width: 160px;
+  width: 300%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  border-radius: 10%;
+  border-radius: 5%;
 }
 
 .dropdownaiecm:hover .dropdownaiecm-content {
-  display: block;
+  display: inline-block;
 }
 
 .descaiecm {
@@ -526,14 +559,14 @@ body
   display: none;
   position: absolute;
   background-color: #6caed5;
-  min-width: 160px;
+  width: 300%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   border-radius: 5%;
 }
 
 .dropdowncu:hover .dropdowncu-content {
-  display: block;
+  display: inline-block;
 }
 
 .desccu {
@@ -548,22 +581,22 @@ body
     
 }
 .dropdownksi img {
-  border-radius: 10%;
+  border-radius: 5%;
   border: 3px;
 }
 
 .dropdownksi-content {
   display: none;
   position: absolute;
-  background-color: #6caed5;
-  min-width: 160px;
+  background-color: skyblue;
+  width: 300%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   border-radius: 2%;
 }
 
 .dropdownksi:hover .dropdownksi-content {
-  display: block;
+  display: inline-block;
 }
 
 .descksi {
@@ -571,6 +604,38 @@ body
   text-align: justify;
 }
 
+/*-----------FOCEEN----------*/
+.dropdownfoceen {
+  position: relative;
+  display: inline-block;
+    
+}
+.dropdownfoceen img {
+  border-radius: 5%;
+  border: 3px;
+}
+
+.dropdownfoceen-content {
+  display: none;
+  position: absolute;
+  background-color: moccasin;
+  width: 200%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 3%;
+}
+
+.dropdownfoceen:hover .dropdownfoceen-content {
+  display: inline-block;
+}
+
+.descfoceen {
+  padding: 15px;
+  text-align: justify;
+}
+
+
+/*-----------Centrale Glisse----------*/
 .dropdowncg {
   position: relative;
   display: inline-block;
@@ -585,14 +650,14 @@ body
   display: none;
   position: absolute;
   background-color: #ff9933;
-  min-width: 160px;
+  width: 300%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   border-radius: 10%;
 }
 
 .dropdowncg:hover .dropdowncg-content {
-  display: block;
+  display: inline-block;
 }
 
 .desccg {
@@ -608,21 +673,21 @@ body
     
 }
 .dropdownmsb img {
-  border-radius: 10%;
+  border-radius: 5%;
   ;
 }
 .dropdownmsb-content {
   display: none;
   position: absolute;
   background-color: #6caed5;
-  min-width: 160px;
+  width: 300%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   border-radius: 10%;
 }
 
 .dropdownmsb:hover .dropdownmsb-content {
-  display: block;
+  display: inline-block;
 }
 
 .descmsb {
@@ -684,3 +749,79 @@ body
     border: 3px solid darkgrey;   
 }
 
+/*---------PORTFOLIO------------*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #666;
+   color: white;
+}

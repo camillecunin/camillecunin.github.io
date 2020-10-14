@@ -64,6 +64,58 @@
   }
   }
 </script>
+
+ <!-----JavaScript Portfolio------> 
+<script>
+filterSelection("all") // Execute the function and show all columns
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}    
+</script>    
+    
 <!--------------------------------------------------------->
 </head>
 <body>
@@ -72,9 +124,12 @@
 <section id="header">
 <div class="container text-center">
 <div class="user-box">
-<img src="img/me.jpg">
+<img src="img/mebis.jpg">
 <h1>Camille CUNIN</h1>
 <p>Graduate Student in General Engineering</p>
+    <div class="legendebg">
+        <i>“An idea’s birth – or the luminous lifeblood of our thoughts” by Carasco (French woman painter)</i>
+    </div>
 </div>    
 </div>   
 <div class="scroll-btn">
@@ -135,12 +190,14 @@
 <div class="about container" id="about">
 <div class="row">
 <div class="col-md-6 text-center">
-<img src="img/me2020.jpg" class="profile-img">
+<img src="img/pf3.jpg" class="profile-img1">
+<img src="img/pf4.jpg" class="profile-img2">
 </div>
+        
     
 <div class="col-md-6">
 <h3>ABOUT ME</h3>
-    <p>Graduate student in General Engineering, I am passionate with <b>neuroscience, biomedical engineering, nanotechnologies</b>, I would like to pursue a research career in neuroscience and lead advances in biological sciences and technologies <b>to make a difference in the improvement of human health.</b>.
+    <p>Graduate student in General Engineering, I am passionate with <b>neuroscience, biomedical engineering, nanotechnologies</b>, I would like to pursue a research career in neuroscience and lead advances in biological sciences and technologies <b>to make a difference in the improvement of human health.</b>
 </p>
     
 <div class="skills-bar">
@@ -198,12 +255,15 @@
     
 <li>
 <h5>June 2019 – August 2019 <i class="fas fa-chalkboard-teacher"></i></h5>
-<h4 style="color:#008;">RESEARCH STUDENT, MGH & Harvard Med. School</h4>
+<h4 style="color:#008;">HST-WELLMAN SUMMER INSTITUTE FOR BIO-MEDICAL OPTICS, MGH & Harvard Med. School</h4>
     <b><i>The Tearney Lab – Wellman Center for Photomedicine - MGH Main Campus – BOSTON, MA</i></b><br>
 <p>In parallel with my internship, I completed a three-month program in biomedical optics at MGH. Through hands-on research experience, this program trained me in the study and innovation of biomedical optics for improving human health and advancing biological sciences. I acquired methods to conduct research responsibly and to achieve the skills to communicate research findings effectively through oral presentations, scientific poster presentation and a large panel of courses on diverse medical and engineering topics.<br>
 </p>
 </li>
 
+<div class="hstsi-picture">
+    <p><img src="img/hstsi.jpg" class="hstsi"><figcaption>HST-Wellman Summer Institute for Biomedical Optics Certification Day (Aug. 2019) - To the left, Dr. Duri Song; to the right, Dr. Gary Tearney</figcaption></p>
+</div>
 <li>
 <h5>August 2018 <i class='fas fa-microscope'></i></h5>
 <h4 style="color:#008;">INTERN, École Centrale de Marseille</h4>
@@ -262,6 +322,7 @@
     Graduated from High School with the highest honors.<br>
 </p>
 </li>
+
 </ul> 
 <br>
 
@@ -275,7 +336,7 @@
 <li>
 <p><span><b>2019</b></span> - Best slam talk runner-up award for people’s choice — Wellman Scientific Day - MGH</p>
 </li>
-<li><p><span><b>2019</b></span> - Harvard – MIT Summer Institute in Biomedical Optics at MGH</p>
+<li><p><span><b>2019</b></span> - Harvard – Wellman Summer Institute in Biomedical Optics at MGH</p>
 </li>
 <li><p><span><b>2018</b></span> - Bachelor of Engineering Sciences</p>
 </li>
@@ -388,8 +449,7 @@
 <div class="dropdowndecon">
   <img src="img/decon.png" alt="N95 Decon" border-radius= "10%" height= "150px" width= "auto" border= "3px solid #6caed5">
 <div class="dropdowndecon-content">
-  <img src="img/decon.png" alt="N95 Decon" width="auto" height="300">
-  <div class="descdecon ">FRENCH TRANSALATOR - 2020 <p>N95DECON, INC., a California public benefit corporation, has been formed to support the work of a collection of volunteer scientists, engineers, clinicians, and students from universities across the United States as well as other professionals in the private sector to help disseminate scientific information about personal protective equipment decontamination,  including N95 respirators during COVID-19 pandemic (https://www.n95decon.org/).</p></div>
+    <div class="descdecon ">FRENCH TRANSALATOR - 2020 <p>N95DECON, INC., a California public benefit corporation, has been formed to support the work of a collection of volunteer scientists, engineers, clinicians, and students from universities across the United States as well as other professionals in the private sector to help disseminate scientific information about personal protective equipment decontamination,  including N95 respirators during COVID-19 pandemic (more information <a href="https://www.n95decon.org/">here</a>).</div>
   </div>
 </div>
 
@@ -397,7 +457,6 @@
 <div class="dropdownbwh">
   <img src="img/bwh.png" alt="BWH" border-radius= "10%" height= "150px" width= "auto" border= "3px solid #6caed5">
 <div class="dropdownbwh-content">
-  <img src="img/bwh.png" alt="BWH" width="auto" height="300">
   <div class="descbwh">RESEARCH VOLUNTEER - MAY-NOV. 2019 – VISUAL ATTENTION LAB - HARVARD MEDICAL SCHOOL-BRIGHAM & WOMEN'S HOSPITAL – <p>For a few months, I took part in weekly studies to help understand the mechanisms by which attention selects specific items, as well as to evaluate the potential of AI for use in differential diagnosis. This included studies of how to terminate searches without finding the target and studies of the processing of visual stimuli before they are selected by attention for further, more complete analysis.</p></div>
   </div>
 </div>
@@ -410,7 +469,6 @@
 <div class="dropdowncu">
   <img src="img/cheerup.png" alt="Cheer Up!" height= "150px" width= "auto">
 <div class="dropdowncu-content">
-  <img src="img/cheerup.png" alt="Cheer Up!" width="auto" height="300">
   <div class="desccu">HOSPITAL VOLONTEER - 2017–2018 – CHEER UP! <p>I used to periodically visit children suffering from cancer at the hospital to talk about their projects and help them fulfill their dreams. As a first experience with the clinical world, I experienced the in-hospital world and realized how important innovation in the biomedical field is</p></div>
   </div>
     </div>
@@ -420,21 +478,28 @@
 <div class="dropdownaiecm">
   <img src="img/aiecm.PNG" alt="Centrale Marseille Alumni" height= "150px" width= "auto">
 <div class="dropdownaiecm-content">
-  <img src="img/aiecm.PNG" alt="Centrale Marseille Alumni" width="auto" height="300">
+  
   <div class="descaiecm">STUDENTS REPRESENTATIVE - 2019–... – AIECM <p>As an elected representative of my year group, my role is to hold our school year together after graduation, for instance by organizing regular events and seminars to feed the alumni network. The video I made to present the students representatives can be found <a href="https://drive.google.com/file/d/1lIV2y8EdyYReV9vRiLSg_qjDSzWfdAXg/view?fbclid=IwAR0twtOSFaz8fB_Rm9OHktun0FpAP_27zVHUi2ed-KUk3b4kdoO9FhN581c">here</a> 
       </p></div>
   </div>
     </div>
     
     
-  
+  <h4 style="color:#f5deb3;">ORGANIZATION OF SPORT EVENTS</h4> 
    
  <!---MSB----->
 <div class="dropdownmsb">
   <img src="img/msb.png" alt="MSB" height= "150px" width= "auto">
 <div class="dropdownmsb-content">
-  <img src="img/msb.png" alt="MSB" width="auto" height="300">
-  <div class="descmsb">MSB - Communication Pole<p>As </p></div>
+  <div class="descmsb">MSB - Communication Pole<p>Part of the leading team, I took part in the organization of this 3-day sportive event, meant to foster common activities between Engineering and Business Schools of the South of France, through a sportive tournament.</p></div>
+  </div>
+    </div>
+ 
+    <!---Intercentrale----->
+<div class="dropdownmsb">
+  <img src="img/ecm.png" alt="InterCentrales" height= "150px" width= "auto">
+<div class="dropdownmsb-content">
+  <div class="descmsb">INTERCENTRALES 2018 - <p> This sport tournament is organized every year by one of the 5 Schools from the Groupe Centrale. In 2018, Centrale Marseille was the organizing team and I joined the Communication Division.</p></div>
   </div>
     </div>
  
@@ -443,7 +508,7 @@
 <div class="dropdowncg">
   <img src="img/cg.png" alt="Centrale Glisse" height= "150px" width= "auto">
 <div class="dropdowncg-content">
-  <img src="img/cg.png" alt="Centrale Glisse" width="auto" height="300">
+
   <div class="desccg">PRESIDENT - 2017–2018 – CENTRALE GLISSE <p> To provide watersports for all, I relaunched this association to offer École Centrale students the possibility to practice nautical sports (windsurf, kitesurf…), usually costly, at a more accessible price including lessons and facilities. Through this project, I not only developed management skills, but I also learned canvassing to find watersport teachers and sponsors.</p></div>
   </div>
     </div>
@@ -457,11 +522,19 @@
 <div class="dropdownksi">
   <img src="img/ksi.png" alt="KSI Centrale Marseille" height= "150px" width= "auto">
 <div class="dropdownksi-content">
-  <img src="img/ksi.png" alt="KSI Centrale Marseille" width="auto" height="300">
+
   <div class="descksi">JUNIOR ENTREPRENEUR - 2017–2018 – PROJECT MANAGER & WEB SPECIALIST AT KSI CENTRALE MARSEILLE <p> As a project manager, my role was to identify clients’ needs, to write specifications, to draw up provisional budget and planning, as well as to draft commercial proposals. My experience as a Junior Entrepreneur strengthened my ability to organize information, to identify priorities and to work efficiency to meet deadlines. As a quality controller, I took part in the quality process by reviewing and validating every study related to web development and computer-related topics.</p></div>
   </div>
     </div>
     
+<!---FOCEEN - CEA----->
+<div class="dropdownfoceen">
+  <img src="img/foceen.jpg" alt="FOCEEN Forum Centrale Marseille" height= "150px" width= "auto">
+<div class="dropdownfoceen-content">
+
+  <div class="descfoceen">FOCEEN - CENTRALE MARSEILLE'S FORUM - CEA Interlocutor<p> During Centrale Marseille's Forum, I volunteered to be the CEA (the French Alternative Energies and Atomic Energy Commission) interlocutor. This experience allowed me to talk to researchers and learn about research organization in France. I also had the chance to be interviewed by the CEA Communication Team to promote École Centrale Marseille and the Forum.</p></div>
+  </div>
+    </div>
     
 </div>
 </div>
@@ -478,7 +551,206 @@
     <p><i class="fas fa-brain"></i> <i class="fas fa-microscope"></i> ------------ <i class="fas fa-hiking"></i> <i class="fas fa-mountain"></i> ------------ <i class="fas fa-globe-asia"></i> <i class="fas fa-leaf"></i></p>
     <p><i class="fas fa-record-vinyl"></i> <i class="fas fa-headphones"></i> ------------<i class="fas fa-palette"></i> <i class="fas fa-camera"></i></p>  
 </h1>
+    
+<h2>PORTFOLIO</h2>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('art')"> Art</button>
+  <button class="btn" onclick="filterSelection('construction')"> Construction</button>
+  <button class="btn" onclick="filterSelection('experimentation')"> Experimentation</button>
+  <button class="btn" onclick="filterSelection('music')"> Music</button>
+  <button class="btn" onclick="filterSelection('danse')"> Danse</button>
 </div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column art">
+    <div class="content">
+      <img src="img/pf5.jpg" alt="pf5" style="width:100%">
+      <h4>Hand painting</h4>
+      <p>2002</p>
+    </div>
+        
+    <div class="content">
+      <img src="img/pf6.jpg" alt="pf6" style="width:100%">
+      <h4>Engraving on copper plate</h4>
+      <p>2004</p>
+    </div>
+    <div class="content">
+      <img src="img/art20032.jpg" alt="2003" style="width:100%">
+      <h4>Engraving on copper plate</h4>
+      <p>2003</p>
+    </div>
+    <div class="content">
+      <img src="img/art2020.jpg" alt="2020" style="width:100%">
+      <h4>Aquatin - Engraving with sugar and Chinese ink</h4>
+      <p>2020</p>
+    </div>
+    <div class="content">
+      <img src="img/2005 Dessin de Camille - La dame au chapeau et la casserole émaillée d'après Pablo Picasso - Centre Beaubourg - 03 avril 2005 - 2516.jpg" alt="2005" style="width:100%">
+      <h4>Drawing with pencil colors at Centre Beaubourg Museum - La dame au chapeau et la casserole émaillée d'après Pablo Picasso</h4>
+      <p>2005</p>
+    </div>
+  </div>
+    
+  <div class="column art">
+    <div class="content">
+      <img src="img/art20133.jpg" alt="2013" style="width:100%">
+      <h4>Painting : New-York City - oil on canvas</h4>
+      <p>2013</p>
+    </div>
+    <div class="content">
+      <img src="img/art20041.jpg" alt="2004" style="width:100%">
+      <h4>Pastels</h4>
+      <p>2004</p>
+    </div>
+    <div class="content">
+      <img src="img/art2013.jpg" alt="2013" style="width:100%">
+      <h4>Oil on canvas</h4>
+      <p>2013</p>
+    </div>
+    <div class="content">
+      <img src="img/art20132.jpg" alt="2013" style="width:100%">
+      <h4>Engraving on copper plate</h4>
+      <p>2013</p>
+    </div>
+    <div class="content">
+      <img src="img/art20031.jpg" alt="2013" style="width:100%">
+      <h4>Marbling</h4>
+      <p>2003</p>
+    </div>
+</div>
+  <div class="column art">
+    <div class="content">
+      <img src="img/art20203.jpg" alt="2020" style="width:100%">
+      <h4>Drawing</h4>
+      <p>2020</p>
+    </div>  
+    <div class="content">
+      <img src="img/art20201.jpg" alt="2020" style="width:100%">
+      <h4>Drawing</h4>
+      <p>2020</p>
+    </div> 
+    <div class="content">
+      <img src="img/art20202.jpg" alt="2020" style="width:100%">
+      <h4>Drawing</h4>
+      <p>2020</p>
+    </div>
+    <div class="content">
+      <img src="img/art20062.jpg" alt="2006" style="width:100%">
+      <h4>Engraving on copper plate</h4>
+      <p>2006</p>
+    </div>
+      <div class="content">
+      <img src="img/art20022.jpg" alt="2002" style="width:100%">
+      <h4>Watercolors</h4>
+      <p>2002</p>
+    </div>
+  </div>
+
+<!--CONSTRUCTION-->
+  <div class="column construction">
+    <div class="content">
+      <img src="img/pf1.jpg" alt="construction" style="width:100%">
+      <h4>Cars</h4>
+      <p>2003</p>
+    </div>
+    <div class="content">
+      <img src="img/lego1999.jpg" alt="construction" style="width:100%">
+      <h4>Initiation to Lego</h4>
+      <p>1999</p>
+    </div>
+  </div>
+  <div class="column construction">
+    <div class="content">
+      <img src="img/pf4.jpg" alt="construction" style="width:100%">
+      <h4>Megablocs</h4>
+      <p>2005</p>
+    </div>
+    </div>
+      
+ <div class="column construction">
+    <div class="content">
+      <img src="img/lego20072.jpg" alt="construction" style="width:100%">
+      <h4>Electric train on Lego railways</h4>
+      <p>2007</p>
+    </div>
+    <div class="content">
+      <img src="img/lego2008.JPG" alt="construction" style="width:100%">
+      <h4>Sand castle</h4>
+      <p>2007</p>
+    </div>
+  </div>
+
+<!--EXPERIMENTATION-->
+
+  <div class="column experimentation">
+    <div class="content">
+      <img src="img/pf2.JPG" alt="pf2" style="width:100%">
+      <h4>Telescope</h4>
+      <p>2005</p>
+    </div>
+  </div>
+  <div class="column experimentation">
+    <div class="content">
+      <img src="img/pf3.JPG" alt="pf3" style="width:100%">
+      <h4>Chemistry</h4>
+      <p>2005</p>
+    </div>
+  </div>
+
+  <div class="column experimentation">
+    <div class="content">
+      <img src="img/pf8.jpg" alt="pf8" style="width:100%">
+      <h4>Chemistry</h4>
+      <p>2005</p>
+    </div>
+  </div>
+
+    <!----MUSIQUE-------->
+  <div class="column music">
+    <div class="content">
+      <img src="img/musique20051.jpg" alt="music" style="width:100%">
+      <h4>2005</h4>
+    </div>
+  </div>
+  <div class="column musique">  
+      <div class="content">
+      <img src="img/musique20071.jpg" alt="music" style="width:100%">
+      <h4>2007</h4>
+    </div>
+    <div class="content">
+      <img src="img/musique20081.jpg" alt="music" style="width:100%">
+      <h4>2008</h4>
+    </div>
+  </div>
+  <div class="column musique">
+    <div class="content">
+      <img src="img/musique20141.jpg" alt="music" style="width:100%">
+      <h4>2014</h4>
+    </div>
+
+  </div>  
+
+    
+<!-------DANSE-------->
+ <div class="column danse">
+    <div class="content">
+      <img src="img/artmusical2018.jpg" alt="danse" style="width:100%">
+      <h4>Musical 2018</h4>
+    </div>
+    <div class="content">
+      <img src="img/arthoop2020.jpg" alt="danse" style="width:100%">
+      <h4>Aerial Hoop 2020</h4>
+    </div>
+
+  </div>  
+  </div>
+    
+    
+<!-- END GRID -->
+</div>
+</div>    
 </div>
    
         
