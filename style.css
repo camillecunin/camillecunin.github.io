@@ -77,8 +77,9 @@ body
 }
 .profile-img
 {
-    width: 100%;
+    width: 82%;
     height: auto;
+    align-self: left;
     
 }
 .nav-bar
