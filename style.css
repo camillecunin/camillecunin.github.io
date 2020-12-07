@@ -41,11 +41,12 @@ body
     font-size: 20px;
     margin: 8px;
 }
-.user-box legendebg
+.user-box h5
 {
-    color: #f1f1f1;
+    color: #f1f1f8;
     position: right;
-    font-size: 50px;
+    font-size: 10px;
+    font-style: italic;
 }
 .scroll-btn
 {
